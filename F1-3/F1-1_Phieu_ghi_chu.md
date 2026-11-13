@@ -11,5 +11,3 @@ Học liệu: DataCamp "Large Language Models (LLMs) Concepts" – phần LLM ho
 | 5 | Hallucination | Model sinh nội dung nghe hợp lý nhưng không có căn cứ trong nguồn (bịa giới hạn, quy tắc, API…). | Rủi ro: hỏi "tối đa bao nhiêu sản phẩm" mà không kèm SRS, model có thể bịa (ví dụ mẫu: "99"). Ở lần đo này (run 8) model trả lời "Không có trong tài liệu" nhờ system prompt yêu cầu chỉ dựa trên tài liệu. |
 
 **Áp dụng cho QA:** luôn kèm đoạn SRS/req ID trong prompt; đối chiếu mọi expected do AI đề xuất với SRS; ghi lại model, version, tham số để tái lập; kiểm tra AI có bỏ sót giá trị biên không (cả 6 lần E1 đều thiếu biên 1 và 10).
-
-**Câu hỏi còn mở:** <học viên tự điền>
