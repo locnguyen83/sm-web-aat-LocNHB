@@ -1,0 +1,6 @@
+{
+  "$comment": "Schema tối thiểu cho POST /carts – mở rộng theo Swagger https://api.practicesoftwaretesting.com/api/documentation",
+  "type": "object",
+  "required": ["id"],
+  "properties": { "id": { "type": "string", "minLength": 1 } }
+}

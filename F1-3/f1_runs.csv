@@ -1,0 +1,9 @@
+run,experiment,variable_changed,model,prompt_id,max_tokens,top_p,reasoning_effort,seed,temperature,with_srs_context,datetime,raw_output_file,output_sha1,correct_vs_SRS,hallucination,observation
+1,E1,temperature,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,0.0,Y,2026-11-13T06:58:21,raw_ai_output/run01_E1_t0.0_ctx.txt,3c6f896436,,,
+2,E1,temperature,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,0.0,Y,2026-11-13T07:02:13,raw_ai_output/run02_E1_t0.0_ctx.txt,7c2a65485f,,,
+3,E1,temperature,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,0.0,Y,2026-11-13T07:03:14,raw_ai_output/run03_E1_t0.0_ctx.txt,f156e9287d,,,
+4,E1,temperature,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,1.0,Y,2026-11-13T07:03:34,raw_ai_output/run04_E1_t1.0_ctx.txt,4c0313cdd1,,,
+5,E1,temperature,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,1.0,Y,2026-11-13T07:04:28,raw_ai_output/run05_E1_t1.0_ctx.txt,6aad0a64a3,,,
+6,E1,temperature,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,1.0,Y,2026-11-13T07:05:28,raw_ai_output/run06_E1_t1.0_ctx.txt,64c1884489,,,
+7,E2,context,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,0.0,Y,2026-11-13T07:05:49,raw_ai_output/run07_E2_t0.0_ctx.txt,81b71f853c,,,
+8,E2,context,gemini-3.5-flash,PR-F1-001 v1.0,400,0.95,none,,0.0,N,2026-11-13T07:06:19,raw_ai_output/run08_E2_t0.0_noctx.txt,5f0fee0c66,,,

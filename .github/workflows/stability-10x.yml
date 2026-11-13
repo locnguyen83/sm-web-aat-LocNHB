@@ -1,0 +1,42 @@
+# Chuẩn ổn định A4-3 (syllabus AAT v1.4): 1 lần chạy = TOÀN BỘ suite UI; chạy 10 lần trên bản chuẩn;
+# đạt khi >= 9/10 lần chạy toàn suite đúng expected; retries = 0; skip bị tính là không đạt.
+name: stability-10x
+on:
+  workflow_dispatch:
+    inputs:
+      project: { description: 'Playwright project (ui/api)', default: 'ui', required: true }
+jobs:
+  run:
+    runs-on: ubuntu-latest      # GitHub nội bộ: đổi sang nhãn runner của lớp
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 1           # chạy tuần tự để tránh tranh chấp dữ liệu trên UAT dùng chung
+      matrix:
+        run: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    env:
+      PW_RETRIES: '0'
+      BASE_URL: ${{ vars.BASE_URL }}
+      API_URL: ${{ vars.API_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm ci || npm install
+      - run: npx playwright install --with-deps chromium
+      - name: Run full suite (run ${{ matrix.run }})
+        run: npx playwright test --project=${{ inputs.project }} || true   # kết quả được chấm ở job summary
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: results-run-${{ matrix.run }}, path: results/results.json, retention-days: 30 }
+  summary:
+    needs: run
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: all-results }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/count_stability.mjs all-results 9

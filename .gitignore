@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets - KHONG commit API key
+.env
+.env.*
+
+# File tạm
+*.zip
+F1-3/_check_gemini.py
+
+# Node / Playwright
+node_modules/
+playwright-report/
+test-results/
+results/
+all-results/

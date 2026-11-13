@@ -1,0 +1,3 @@
+1. Nhập số lượng sản phẩm bằng 0 (giá trị < 1) và kiểm tra hệ thống không chấp nhận, hiển thị thông báo lỗi.
+2. Nhập số lượng sản phẩm bằng 5 (giá trị hợp lệ từ 1 đến 10) và kiểm tra hệ thống chấp nhận cập nhật giỏ hàng.
+3. Nhập số lượng sản phẩm bằng 11 (giá trị > 10) và kiểm tra hệ thống không chấp nhận, hiển thị thông báo lỗi.

@@ -1,0 +1,4 @@
+Dựa trên tài liệu được cung cấp:
+
+* Khách được đặt tối đa **10** sản phẩm cùng loại trong giỏ.
+* Nếu vượt giới hạn (nhập số lượng > 10), hệ thống **không chấp nhận và hiển thị thông báo**.

@@ -1,0 +1,3 @@
+Nhập số lượng bằng 0 (nhỏ hơn 1), hệ thống không chấp nhận và hiển thị thông báo.
+Nhập số lượng bằng 11 (lớn hơn 10), hệ thống không chấp nhận và hiển thị thông báo.
+Nhập số lượng bằng 5 (từ 1 đến 10), hệ thống chấp nhận và cập nhật giỏ hàng.
