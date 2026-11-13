@@ -13,6 +13,7 @@
 | E-07 | F1-3 | File | Script đã chạy (có thêm reasoning_effort) | F1-3/F1_variability.py, F1-3/llm_client.py | – | Tái lập thí nghiệm | Tái sử dụng 10_Starter_Kit/common, có chỉnh sửa | 2026-11-13 |
 | E-08 | F1-1 | File | Phiếu ghi chú 1 trang (5 khái niệm + ví dụ SM-WEB) | F1-3/F1-1_Phieu_ghi_chu.md | REQ-SF-03 | Nộp kèm F1-3 | Tự làm | 2026-11-13 |
 | E-09 | F1-3 | Log | Nhật ký dùng AI / escalation | F3_AI_Usage_Escalation_Log.csv | – | Tuân thủ dữ liệu | Tự làm | 2026-11-13 |
+| E-10 | F1-3 | File | Notebook Colab đã chạy 8 lần (kèm output cell; key đọc từ Colab Secrets, không lưu trong file) | F1-3/evidence/F1-3_LocNHB.ipynb | REQ-SF-03 | Chạy trên Colab; đủ raw output 8 lần chạy | Tự làm | 2026-11-13 |
 
 ## Khai báo đóng góp cá nhân (đồ án/RP)
 - Phần tái sử dụng từ lab (ghi lab nguồn): …
