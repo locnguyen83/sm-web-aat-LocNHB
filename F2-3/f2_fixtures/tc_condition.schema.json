@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SM-WEB test condition list (F2-3)",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "req_id", "condition", "technique", "priority", "source_quote"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^C-[0-9]{2,3}$" },
+      "req_id": { "type": "string", "pattern": "^REQ-(SF|API|NF)-[0-9]{2}$" },
+      "condition": { "type": "string", "minLength": 10 },
+      "technique": { "type": "string", "enum": ["EP", "BVA", "Decision table", "State transition", "Pairwise", "Error guessing"] },
+      "priority": { "type": "string", "enum": ["Cao", "Trung bình", "Thấp"] },
+      "source_quote": { "type": "string", "description": "Trích nguyên văn câu SRS làm căn cứ – dùng để phát hiện hallucination" }
+    }
+  }
+}

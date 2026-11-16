@@ -1,0 +1,44 @@
+```json
+[
+  {
+    "req_id": "REQ-SF-01",
+    "rule": "Khách thêm sản phẩm vào giỏ từ trang chi tiết sản phẩm với số lượng chọn được."
+  },
+  {
+    "req_id": "REQ-SF-02",
+    "rule": "Sản phẩm hết hàng không được thêm vào giỏ."
+  },
+  {
+    "req_id": "REQ-SF-03",
+    "rule": "Số lượng mỗi sản phẩm trong giỏ từ 1 đến 10."
+  },
+  {
+    "req_id": "REQ-SF-04",
+    "rule": "Khách thay đổi số lượng hoặc xóa dòng sản phẩm; tổng tiền cập nhật ngay."
+  },
+  {
+    "req_id": "REQ-SF-07",
+    "rule": "Giỏ của khách đã đăng nhập được giữ lại khi đăng xuất và đăng nhập lại."
+  },
+  {
+    "req_id": "REQ-SF-10",
+    "rule": "Checkout gồm 4 bước: Giỏ hàng → Đăng nhập → Địa chỉ thanh toán → Phương thức thanh toán."
+  },
+  {
+    "req_id": "REQ-SF-11",
+    "rule": "Khách chưa đăng nhập phải đăng nhập hoặc đăng ký trước khi nhập địa chỉ."
+  },
+  {
+    "req_id": "REQ-SF-12",
+    "rule": "Địa chỉ thanh toán bắt buộc: địa chỉ, thành phố, tỉnh/bang, quốc gia, mã bưu chính."
+  },
+  {
+    "req_id": "REQ-SF-14",
+    "rule": "Thanh toán thành công tạo hóa đơn có mã duy nhất và thông báo xác nhận."
+  },
+  {
+    "req_id": "REQ-SF-22",
+    "rule": "Thẻ tín dụng: số thẻ định dạng 0000-0000-0000-0000; ngày hết hạn MM/YYYY không ở quá khứ; CVV 3–4 chữ số; tên chủ thẻ."
+  }
+]
+```
