@@ -1,0 +1,204 @@
+```json
+[
+  {
+    "id": "C-01",
+    "req_id": "REQ-SF-01",
+    "condition": "Thêm thành công sản phẩm còn hàng vào giỏ với số lượng hợp lệ (N = 2)",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Giỏ hàng phải thêm đúng N đơn vị và biểu tượng giỏ hàng phải cập nhật hiển thị số lượng mới khi chọn số lượng N và nhấn \"Thêm vào giỏ\" tại trang chi tiết sản phẩm còn hàng."
+  },
+  {
+    "id": "C-02",
+    "req_id": "REQ-SF-02",
+    "condition": "Thêm sản phẩm hết hàng vào giỏ hàng thất bại khi nhấn \"Thêm vào giỏ\"",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Đối với sản phẩm hết hàng: Nút \"Thêm vào giỏ\" phải bị vô hiệu hóa (disabled) hoặc hệ thống hiển thị thông báo lỗi; giỏ hàng không được thay đổi."
+  },
+  {
+    "id": "C-03",
+    "req_id": "REQ-SF-03",
+    "condition": "Kiểm tra số lượng sản phẩm bằng giá trị biên dưới hợp lệ (nhập số lượng = 1)",
+    "technique": "BVA",
+    "priority": "Cao",
+    "source_quote": "Giá trị hợp lệ cho số lượng sản phẩm từ 1 đến 10."
+  },
+  {
+    "id": "C-04",
+    "req_id": "REQ-SF-03",
+    "condition": "Kiểm tra số lượng sản phẩm bằng giá trị biên trên hợp lệ (nhập số lượng = 10)",
+    "technique": "BVA",
+    "priority": "Cao",
+    "source_quote": "Giá trị hợp lệ cho số lượng sản phẩm từ 1 đến 10."
+  },
+  {
+    "id": "C-05",
+    "req_id": "REQ-SF-03",
+    "condition": "Kiểm tra số lượng sản phẩm bằng 0 (giá trị biên dưới không hợp lệ, số lượng < 1)",
+    "technique": "BVA",
+    "priority": "Cao",
+    "source_quote": "Giá trị không hợp lệ: nhập số lượng < 1 (bao gồm số âm, số 0) hoặc > 10 → Hệ thống không chấp nhận và phải hiển thị thông báo lỗi."
+  },
+  {
+    "id": "C-06",
+    "req_id": "REQ-SF-03",
+    "condition": "Kiểm tra số lượng sản phẩm là số âm (nhập số lượng = -1, không hợp lệ)",
+    "technique": "EP",
+    "priority": "Trung bình",
+    "source_quote": "Giá trị không hợp lệ: nhập số lượng < 1 (bao gồm số âm, số 0) hoặc > 10 → Hệ thống không chấp nhận và phải hiển thị thông báo lỗi."
+  },
+  {
+    "id": "C-07",
+    "req_id": "REQ-SF-03",
+    "condition": "Kiểm tra số lượng sản phẩm lớn hơn giá trị biên trên (nhập số lượng = 11, không hợp lệ)",
+    "technique": "BVA",
+    "priority": "Cao",
+    "source_quote": "Giá trị không hợp lệ: nhập số lượng < 1 (bao gồm số âm, số 0) hoặc > 10 → Hệ thống không chấp nhận và phải hiển thị thông báo lỗi."
+  },
+  {
+    "id": "C-08",
+    "req_id": "REQ-SF-04",
+    "condition": "Thay đổi số lượng sản phẩm trong giỏ và kiểm tra thành tiền, tổng tiền được cập nhật ngay lập tức",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Khi khách hàng thay đổi số lượng sản phẩm hoặc xóa một dòng sản phẩm khỏi giỏ: Thành tiền của dòng đó và tổng tiền toàn bộ giỏ hàng phải được tính toán lại ngay lập tức và chính xác."
+  },
+  {
+    "id": "C-09",
+    "req_id": "REQ-SF-04",
+    "condition": "Xóa một dòng sản phẩm khỏi giỏ và kiểm tra tổng tiền giỏ hàng cập nhật chính xác",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Khi khách hàng thay đổi số lượng sản phẩm hoặc xóa một dòng sản phẩm khỏi giỏ: Thành tiền của dòng đó và tổng tiền toàn bộ giỏ hàng phải được tính toán lại ngay lập tức và chính xác."
+  },
+  {
+    "id": "C-10",
+    "req_id": "REQ-SF-07",
+    "condition": "Dữ liệu giỏ hàng giữ nguyên vẹn sau khi người dùng đăng xuất và đăng nhập lại",
+    "technique": "State transition",
+    "priority": "Cao",
+    "source_quote": "Dữ liệu giỏ hàng của tài khoản đã đăng nhập phải được lưu trữ và giữ nguyên vẹn sau khi người dùng thực hiện thao tác đăng xuất rồi đăng nhập lại."
+  },
+  {
+    "id": "C-11",
+    "req_id": "REQ-SF-10",
+    "condition": "Thực hiện quy trình Checkout thành công qua 4 bước theo đúng thứ tự khi hoàn thành đầy đủ dữ liệu",
+    "technique": "State transition",
+    "priority": "Cao",
+    "source_quote": "Quy trình Checkout tuân thủ đúng 4 bước theo thứ tự."
+  },
+  {
+    "id": "C-12",
+    "req_id": "REQ-SF-10",
+    "condition": "Không thể chuyển sang bước Checkout tiếp theo khi bước hiện tại chưa hoàn thành hợp lệ",
+    "technique": "State transition",
+    "priority": "Cao",
+    "source_quote": "Điều kiện chuyển bước: Người dùng không thể chuyển sang bước tiếp theo nếu bước hiện tại chưa hoàn thành hợp lệ."
+  },
+  {
+    "id": "C-13",
+    "req_id": "REQ-SF-11",
+    "condition": "Chuyển sang bước nhập địa chỉ thành công sau khi khách chưa đăng nhập thực hiện đăng nhập/đăng ký thành công tại Bước 2",
+    "technique": "State transition",
+    "priority": "Cao",
+    "source_quote": "Người dùng phải đăng nhập hoặc đăng ký thành công mới được chuyển sang bước nhập địa chỉ."
+  },
+  {
+    "id": "C-14",
+    "req_id": "REQ-SF-11",
+    "condition": "Không thể chuyển sang bước nhập địa chỉ khi khách chưa đăng nhập không đăng nhập/đăng ký tại Bước 2",
+    "technique": "State transition",
+    "priority": "Cao",
+    "source_quote": "Người dùng phải đăng nhập hoặc đăng ký thành công mới được chuyển sang bước nhập địa chỉ."
+  },
+  {
+    "id": "C-15",
+    "req_id": "REQ-SF-12",
+    "condition": "Nhập đầy đủ thông tin địa chỉ thanh toán hợp lệ và chuyển sang Bước 4",
+    "technique": "Decision table",
+    "priority": "Cao",
+    "source_quote": "Các trường bắt buộc nhập bao gồm: địa chỉ, thành phố, tỉnh/bang, quốc gia, mã bưu chính."
+  },
+  {
+    "id": "C-16",
+    "req_id": "REQ-SF-12",
+    "condition": "Không thể chuyển sang bước 4 và hiển thị lỗi khi bỏ trống một trong các trường địa chỉ thanh toán bắt buộc",
+    "technique": "Decision table",
+    "priority": "Cao",
+    "source_quote": "Hành vi khi sai/thiếu: Nếu thiếu bất kỳ một trường nào trong các trường này, hệ thống không cho phép chuyển sang bước 4 và phải hiển thị thông báo lỗi ngay tại trường bị thiếu."
+  },
+  {
+    "id": "C-17",
+    "req_id": "REQ-SF-14",
+    "condition": "Tạo hóa đơn với mã duy nhất, hiển thị xác nhận và lưu vào mục \"Hóa đơn\" khi thanh toán thành công",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Hành vi khi thanh toán thành công: Hệ thống hiển thị thông báo xác nhận kèm mã hóa đơn duy nhất cho khách hàng; đồng thời hóa đơn mới tạo phải xuất hiện trong mục \"Hóa đơn\" của khách hàng."
+  },
+  {
+    "id": "C-18",
+    "req_id": "REQ-SF-22",
+    "condition": "Thanh toán thẻ tín dụng thành công với các thông tin hợp lệ (Số thẻ đúng dạng 0000-0000-0000-0000, CVV = 123, Ngày hết hạn không ở quá khứ)",
+    "technique": "Decision table",
+    "priority": "Cao",
+    "source_quote": "Định dạng và quy tắc dữ liệu: Số thẻ phải đúng dạng 0000-0000-0000-0000; Ngày hết hạn theo dạng MM/YYYY và thời gian không được nằm ở quá khứ; Mã CVV phải có độ dài từ 3 đến 4 chữ số; Phải nhập Tên chủ thẻ."
+  },
+  {
+    "id": "C-19",
+    "req_id": "REQ-SF-22",
+    "condition": "Kiểm tra độ dài mã CVV hợp lệ tại biên dưới (CVV có 3 chữ số)",
+    "technique": "BVA",
+    "priority": "Trung bình",
+    "source_quote": "Mã CVV phải có độ dài từ 3 đến 4 chữ số;"
+  },
+  {
+    "id": "C-20",
+    "req_id": "REQ-SF-22",
+    "condition": "Kiểm tra độ dài mã CVV hợp lệ tại biên trên (CVV có 4 chữ số)",
+    "technique": "BVA",
+    "priority": "Trung bình",
+    "source_quote": "Mã CVV phải có độ dài từ 3 đến 4 chữ số;"
+  },
+  {
+    "id": "C-21",
+    "req_id": "REQ-SF-22",
+    "condition": "Không thể thực hiện thanh toán khi mã CVV không hợp lệ (CVV có 2 chữ số, dưới khoảng cho phép)",
+    "technique": "BVA",
+    "priority": "Cao",
+    "source_quote": "Hành vi khi sai: Nếu có trường dữ liệu không đúng định dạng hoặc không hợp lệ, hệ thống không cho phép thực hiện thanh toán và phải hiển thị thông báo lỗi tương ứng."
+  },
+  {
+    "id": "C-22",
+    "req_id": "REQ-SF-22",
+    "condition": "Không thể thực hiện thanh toán khi mã CVV không hợp lệ (CVV có 5 chữ số, vượt quá khoảng cho phép)",
+    "technique": "BVA",
+    "priority": "Cao",
+    "source_quote": "Hành vi khi sai: Nếu có trường dữ liệu không đúng định dạng hoặc không hợp lệ, hệ thống không cho phép thực hiện thanh toán và phải hiển thị thông báo lỗi tương ứng."
+  },
+  {
+    "id": "C-23",
+    "req_id": "REQ-SF-22",
+    "condition": "Không thể thực hiện thanh toán khi số thẻ tín dụng sai định dạng (ví dụ: thiếu dấu gạch nối hoặc không đủ 16 chữ số)",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Hành vi khi sai: Nếu có trường dữ liệu không đúng định dạng hoặc không hợp lệ, hệ thống không cho phép thực hiện thanh toán và phải hiển thị thông báo lỗi tương ứng."
+  },
+  {
+    "id": "C-24",
+    "req_id": "REQ-SF-22",
+    "condition": "Không thể thực hiện thanh toán khi ngày hết hạn của thẻ nằm ở quá khứ",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Ngày hết hạn theo dạng MM/YYYY và thời gian không được nằm ở quá khứ;"
+  },
+  {
+    "id": "C-25",
+    "req_id": "REQ-SF-22",
+    "condition": "Không thể thực hiện thanh toán khi bỏ trống Tên chủ thẻ",
+    "technique": "EP",
+    "priority": "Cao",
+    "source_quote": "Hành vi khi sai: Nếu có trường dữ liệu không đúng định dạng hoặc không hợp lệ, hệ thống không cho phép thực hiện thanh toán và phải hiển thị thông báo lỗi tương ứng."
+  }
+]
+```

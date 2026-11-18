@@ -1,0 +1,52 @@
+[
+  {
+    "req_id": "REQ-SF-01",
+    "mo_ta": "Khách thêm sản phẩm vào giỏ từ trang chi tiết sản phẩm với số lượng chọn được.",
+    "quy_tac": "Giỏ hàng phải thêm đúng N đơn vị và biểu tượng giỏ hàng phải cập nhật hiển thị số lượng mới khi chọn số lượng N và nhấn \"Thêm vào giỏ\" tại trang chi tiết sản phẩm còn hàng."
+  },
+  {
+    "req_id": "REQ-SF-02",
+    "mo_ta": "Sản phẩm hết hàng không được thêm vào giỏ.",
+    "quy_tac": "Đối với sản phẩm hết hàng: Nút \"Thêm vào giỏ\" phải bị vô hiệu hóa (disabled) hoặc hệ thống hiển thị thông báo lỗi; giỏ hàng không được thay đổi."
+  },
+  {
+    "req_id": "REQ-SF-03",
+    "mo_ta": "Số lượng mỗi sản phẩm trong giỏ từ 1 đến 10.",
+    "quy_tac": "Giá trị hợp lệ cho số lượng sản phẩm từ 1 đến 10. Giá trị không hợp lệ: nhập số lượng < 1 (bao gồm số âm, số 0) hoặc > 10 → Hệ thống không chấp nhận và phải hiển thị thông báo lỗi."
+  },
+  {
+    "req_id": "REQ-SF-04",
+    "mo_ta": "Khách thay đổi số lượng hoặc xóa dòng sản phẩm; tổng tiền cập nhật ngay.",
+    "quy_tac": "Khi khách hàng thay đổi số lượng sản phẩm hoặc xóa một dòng sản phẩm khỏi giỏ: Thành tiền của dòng đó và tổng tiền toàn bộ giỏ hàng phải được tính toán lại ngay lập tức và chính xác."
+  },
+  {
+    "req_id": "REQ-SF-07",
+    "mo_ta": "Giỏ của khách đã đăng nhập được giữ lại khi đăng xuất và đăng nhập lại.",
+    "quy_tac": "Dữ liệu giỏ hàng của tài khoản đã đăng nhập phải được lưu trữ và giữ nguyên vẹn sau khi người dùng thực hiện thao tác đăng xuất rồi đăng nhập lại."
+  },
+  {
+    "req_id": "REQ-SF-10",
+    "mo_ta": "Checkout gồm 4 bước: Giỏ hàng → Đăng nhập → Địa chỉ thanh toán → Phương thức thanh toán.",
+    "quy_tac": "Quy trình Checkout tuân thủ đúng 4 bước theo thứ tự. Điều kiện chuyển bước: Người dùng không thể chuyển sang bước tiếp theo nếu bước hiện tại chưa hoàn thành hợp lệ."
+  },
+  {
+    "req_id": "REQ-SF-11",
+    "mo_ta": "Khách chưa đăng nhập phải đăng nhập hoặc đăng ký trước khi nhập địa chỉ.",
+    "quy_tac": "Điều kiện với khách chưa đăng nhập: Tại Bước 2 của quá trình Checkout, hệ thống phải hiển thị biểu mẫu (form) Đăng nhập/Đăng ký. Người dùng phải đăng nhập hoặc đăng ký thành công mới được chuyển sang bước nhập địa chỉ."
+  },
+  {
+    "req_id": "REQ-SF-12",
+    "mo_ta": "Địa chỉ thanh toán bắt buộc: địa chỉ, thành phố, tỉnh/bang, quốc gia, mã bưu chính.",
+    "quy_tac": "Các trường bắt buộc nhập bao gồm: địa chỉ, thành phố, tỉnh/bang, quốc gia, mã bưu chính. Hành vi khi sai/thiếu: Nếu thiếu bất kỳ một trường nào trong các trường này, hệ thống không cho phép chuyển sang bước 4 và phải hiển thị thông báo lỗi ngay tại trường bị thiếu."
+  },
+  {
+    "req_id": "REQ-SF-14",
+    "mo_ta": "Thanh toán thành công tạo hóa đơn có mã duy nhất và thông báo xác nhận.",
+    "quy_tac": "Hành vi khi thanh toán thành công: Hệ thống hiển thị thông báo xác nhận kèm mã hóa đơn duy nhất cho khách hàng; đồng thời hóa đơn mới tạo phải xuất hiện trong mục \"Hóa đơn\" của khách hàng."
+  },
+  {
+    "req_id": "REQ-SF-22",
+    "mo_ta": "Thẻ tín dụng: số thẻ định dạng 0000-0000-0000-0000; ngày hết hạn MM/YYYY không ở quá khứ; CVV 3–4 chữ số; tên chủ thẻ.",
+    "quy_tac": "Định dạng và quy tắc dữ liệu: Số thẻ phải đúng dạng 0000-0000-0000-0000; Ngày hết hạn theo dạng MM/YYYY và thời gian không được nằm ở quá khứ; Mã CVV phải có độ dài từ 3 đến 4 chữ số; Phải nhập Tên chủ thẻ. Hành vi khi sai: Nếu có trường dữ liệu không đúng định dạng hoặc không hợp lệ, hệ thống không cho phép thực hiện thanh toán và phải hiển thị thông báo lỗi tương ứng."
+  }
+]

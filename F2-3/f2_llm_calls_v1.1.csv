@@ -1,0 +1,10 @@
+time,provider,model,tokens_in,tokens_out,cost_usd_equiv
+2026-11-18T04:42:57,gemini,gemini-3.5-flash,813,1146,0.0
+2026-11-18T04:43:40,gemini,gemini-3.5-flash,1424,3074,0.0
+2026-11-18T04:44:11,gemini,gemini-3.5-flash,3846,90,0.0
+2026-11-18T04:44:26,gemini,gemini-3.5-flash,813,789,0.0
+2026-11-18T04:44:46,gemini,gemini-3.5-flash,1067,2369,0.0
+2026-11-18T04:45:00,gemini,gemini-3.5-flash,3141,205,0.0
+2026-11-18T04:45:11,gemini,gemini-3.5-flash,960,784,0.0
+2026-11-18T04:45:52,gemini,gemini-3.5-flash,1062,2305,0.0
+2026-11-18T04:46:35,gemini,gemini-3.5-flash,3224,157,0.0

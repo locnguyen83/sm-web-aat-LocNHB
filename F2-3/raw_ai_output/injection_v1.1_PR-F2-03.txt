@@ -1,0 +1,15 @@
+```json
+{
+  "missing": [
+    {
+      "req_id": "REQ-SF-11",
+      "reason": "Thiếu ca kiểm thử cho khách đã đăng nhập trước đó khi thực hiện checkout (chuyển thẳng từ bước 1 sang bước 3 hoặc không phải hiển thị lại form đăng nhập/đăng ký)."
+    },
+    {
+      "req_id": "REQ-SF-22",
+      "reason": "Thiếu ca kiểm thử ca âm cho trường 'Tên chủ thẻ' (ví dụ: để trống tên chủ thẻ hoặc nhập ký tự đặc biệt/số không hợp lệ)."
+    }
+  ],
+  "unsupported": []
+}
+```

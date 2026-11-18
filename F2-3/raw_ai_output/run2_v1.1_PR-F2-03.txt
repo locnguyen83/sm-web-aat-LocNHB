@@ -1,0 +1,19 @@
+```json
+{
+  "missing": [
+    {
+      "req_id": "REQ-SF-12",
+      "reason": "Thiếu các ca âm/kiểm tra biên khi bỏ trống các trường bắt buộc khác ngoài 'Mã bưu chính' (địa chỉ, thành phố, tỉnh/bang, quốc gia) theo tiêu chí thiếu bất kỳ trường nào cũng bị từ chối."
+    },
+    {
+      "req_id": "REQ-SF-14",
+      "reason": "Thiếu ca âm xử lý khi thanh toán thất bại (ví dụ: giao dịch không thành công thì không tạo hóa đơn)."
+    },
+    {
+      "req_id": "REQ-SF-22",
+      "reason": "Thiếu ca âm khi bỏ trống hoặc nhập tên chủ thẻ không đúng/hợp lệ."
+    }
+  ],
+  "unsupported": []
+}
+```

@@ -1,0 +1,54 @@
+```json
+[
+  {
+    "req_id": "REQ-SF-01",
+    "mo_ta": "Khách thêm sản phẩm vào giỏ từ trang chi tiết sản phẩm với số lượng chọn được.",
+    "quy_tac": "Given trang chi tiết sản phẩm còn hàng, When chọn số lượng N và bấm \"Thêm vào giỏ\", Then giỏ có thêm N đơn vị và biểu tượng giỏ hiển thị số lượng mới."
+  },
+  {
+    "req_id": "REQ-SF-02",
+    "mo_ta": "Sản phẩm hết hàng không được thêm vào giỏ.",
+    "quy_tac": "Nút thêm vào giỏ bị vô hiệu hoặc hệ thống báo lỗi, giỏ không thay đổi."
+  },
+  {
+    "req_id": "REQ-SF-03",
+    "mo_ta": "Số lượng mỗi sản phẩm trong giỏ từ 1 đến 10.",
+    "quy_tac": "Nhập số lượng < 1 hoặc > 10 → không chấp nhận, hiển thị thông báo."
+  },
+  {
+    "req_id": "REQ-SF-04",
+    "mo_ta": "Khách thay đổi số lượng hoặc xóa dòng sản phẩm; tổng tiền cập nhật ngay.",
+    "quy_tac": "Thành tiền dòng và tổng giỏ được tính lại đúng."
+  },
+  {
+    "req_id": "REQ-SF-07",
+    "mo_ta": "Giỏ của khách đã đăng nhập được giữ lại khi đăng xuất và đăng nhập lại.",
+    "quy_tac": "Đăng xuất rồi đăng nhập lại, giỏ còn nguyên."
+  },
+  {
+    "req_id": "REQ-SF-10",
+    "mo_ta": "Checkout gồm 4 bước: Giỏ hàng → Đăng nhập → Địa chỉ thanh toán → Phương thức thanh toán.",
+    "quy_tac": "Không thể sang bước sau khi bước trước chưa hợp lệ."
+  },
+  {
+    "req_id": "REQ-SF-11",
+    "mo_ta": "Khách chưa đăng nhập phải đăng nhập hoặc đăng ký trước khi nhập địa chỉ.",
+    "quy_tac": "Ở bước 2 hiển thị form đăng nhập/đăng ký."
+  },
+  {
+    "req_id": "REQ-SF-12",
+    "mo_ta": "Địa chỉ thanh toán bắt buộc: địa chỉ, thành phố, tỉnh/bang, quốc gia, mã bưu chính.",
+    "quy_tac": "Thiếu một trường → không sang bước 4, hiển thị lỗi tại trường."
+  },
+  {
+    "req_id": "REQ-SF-14",
+    "mo_ta": "Thanh toán thành công tạo hóa đơn có mã duy nhất và thông báo xác nhận.",
+    "quy_tac": "Khách thấy thông báo và mã hóa đơn; hóa đơn xuất hiện trong mục Hóa đơn."
+  },
+  {
+    "req_id": "REQ-SF-22",
+    "mo_ta": "Thẻ tín dụng: số thẻ định dạng 0000-0000-0000-0000; ngày hết hạn MM/YYYY không ở quá khứ; CVV 3–4 chữ số; tên chủ thẻ.",
+    "quy_tac": "Trường sai định dạng → không thanh toán, hiển thị lỗi."
+  }
+]
+```

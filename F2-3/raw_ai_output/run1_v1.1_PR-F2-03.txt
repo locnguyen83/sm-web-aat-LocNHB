@@ -1,0 +1,11 @@
+```json
+{
+  "missing": [
+    {
+      "req_id": "REQ-SF-22",
+      "reason": "Thiếu kiểm tra ca âm đối với định dạng ngày hết hạn không phải MM/YYYY (ví dụ: nhập không đúng định dạng tháng/năm dù không phải ở quá khứ)."
+    }
+  ],
+  "unsupported": []
+}
+```
